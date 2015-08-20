@@ -16,6 +16,6 @@
                           {:name "linux" :login "linux"}
                           {:name "jquery" :login "jquery"}]) => '(nil nil nil)
              (provided
-               (clj-http.client/post "100.100.100.1" {:body "[{\"name\":\"rails\",\"login\":\"rails\"}]" :content-type :json :accept :json}) => nil
-               (clj-http.client/post "100.100.100.2" {:body "[{\"name\":\"linux\",\"login\":\"linux\"}]" :content-type :json :accept :json}) => nil
-               (clj-http.client/post "100.100.100.3" {:body "[{\"name\":\"jquery\",\"login\":\"jquery\"}]" :content-type :json :accept :json}) => nil)))
+               (clj-http.client/post anything {:body "[{\"name\":\"rails\",\"login\":\"rails\"}]" :content-type :json :accept :json}) => nil
+               (clj-http.client/post anything {:body "[{\"name\":\"linux\",\"login\":\"linux\"}]" :content-type :json :accept :json}) => nil
+               (clj-http.client/post anything {:body "[{\"name\":\"jquery\",\"login\":\"jquery\"}]" :content-type :json :accept :json}) => nil)))

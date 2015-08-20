@@ -28,4 +28,4 @@
 (def options {:all-pages true})
 
 (defn get-all-repositories []
-  (take 1 (repos/all-repos (merge (auth) options))))
+  (take 2 (repos/all-repos (merge (auth) options))))
