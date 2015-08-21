@@ -4,7 +4,7 @@
 
 
 (def extract-username-and-repo-name
-  (fn [repo] (hash-map :name (:name repo) :login (:login (:owner repo)))))
+  (fn [repo] (hash-map :name (:name repo) :owner {:login (:login (:owner repo))})))
 
 (defn -main []
   (dorun

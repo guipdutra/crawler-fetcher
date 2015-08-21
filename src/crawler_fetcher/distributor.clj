@@ -3,8 +3,8 @@
 
 (def servers
   ["http://0.0.0.0:3000"
-   "http://0.0.0.1:3000"
-   "http://0.0.0.2:3000"])
+   "http://0.0.0.0:3000"
+   "http://0.0.0.0:3000"])
 
 (def default-params { :content-type :json :accept :json })
 
