@@ -23,6 +23,10 @@ On the `distributor.clj#servers` has a list of where workers are running. Add yo
 ```bash
        $ lein midje
 ```
+- Run crawler-fetcher:
+```bash
+       $ lein run
+```
 
 Make sure you set the number of repositories you wish to fetch from github before running Crawler-fetcher.
 
